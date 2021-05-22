@@ -8,7 +8,7 @@
   margin-left: auto;
   margin-right: auto;
   object-fit: scale-down;
-  background: url("/1.jpg") no-repeat 0 0;
+  background: url("1.jpg") no-repeat 0 0;
   background-size: 100% 900px;
 
   height: 110vh;
