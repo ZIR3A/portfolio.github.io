@@ -127,9 +127,9 @@ body {
 }
 
 .service {
-  padding-top: 50px;
+  
   color: black;
-  padding: 50px;
+  padding: 20 50px;
   background: url("3.jpg") no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
