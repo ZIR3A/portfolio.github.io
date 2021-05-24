@@ -46,8 +46,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 1.8rem;
-
-  padding: 1.2rem;
+  margin-left: 25px;
 }
 .menu_list > li > a:hover {
   font-weight: bold;
@@ -59,54 +58,58 @@ body {
   text-align: center;
   width: 100%;
   right: 5px;
+  font-size: 1.5rem;
 }
 .over_text {
   text-align: center;
 }
 
 .btn {
-  padding: 0.6rem;
-  background: #0000;
+  padding: 0.5rem;
+  background: #000;
   border: 2px solid black;
   border-radius: 10px;
-
+  font-size: 1.5rem;
   color: black;
   font-weight: bold;
   cursor: pointer;
 }
 .btn:hover {
-  background: transparent;
-  padding: 0.7rem;
-  color: #000;
+  background: #000;
+  color: #fff;
 }
-
+.main_text {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
 #about {
   color: #fff;
-  background: url("1.jpg") no-repeat 0 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-
-  height: 110vh;
-  width: 100%;
 }
 
 .container_fluid {
   display: flex;
-  margin: auto 50px;
+  margin: auto 10px;
 }
 .text_about {
   padding: 1.5rem;
   margin-left: 2rem;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
 }
 
 .text_box {
   box-shadow: 2px 2px 2px 1px black;
   margin-right: 30px;
+  padding: 20px;
+}
+.text_box > h3 {
+  text-align: center;
 }
 
 .box {
-  margin: auto 10px;
+  width: 80%;
+  margin: auto;
 }
 
 .image_container {
@@ -122,24 +125,21 @@ body {
   height: 1px;
   width: 80%;
   background-color: black;
-  padding: 100px auto;
-  margin: 100px auto;
+  padding: auto;
+  margin: 50px auto;
 }
-
+.mains_text {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
 .service {
-  
-  color: black;
-  padding: 20 50px;
-  background: url("3.jpg") no-repeat 0 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  color: #fff;
 
-  height: 120vh;
   width: 100%;
 }
 .text_section {
   text-align: center;
+  font-size: 1.9rem;
 }
 .service_container {
   display: flex;
@@ -147,9 +147,12 @@ body {
   margin: auto;
   flex-wrap: wrap;
   flex: 3;
+  align-items: center;
+  justify-content: center;
 }
 .img_service {
   margin: auto;
+  padding: 20px;
 }
 .img_service > img {
   height: 300px;
@@ -161,16 +164,86 @@ body {
   font-size: 1.5rem;
 }
 .contact {
-  background: url("4.jpg") no-repeat 0 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  text-align: center;
+  color: #fff;
+}
+.contact_container {
+  display: flex;
 
-  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form {
+  width: 60%;
+  margin: auto;
+  position: relative;
+  height: auto;
+  box-shadow: -1px -1px 1px 1px black;
+  padding: 40px;
+}
+.form_text {
+  font-size: 20px;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  justify-content: start;
+  align-items: center;
   width: 100%;
 }
-@media only screen and (max-width: 600px) {
-  .contact {
-    height: 150vh;
+.fields > span {
+  color: red;
+}
+.form_control {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  margin: auto;
+  width: 100%;
+}
+
+#btn_contact {
+  background-color: #574b90;
+  margin-top: 20px;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.footer {
+  height: 80px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 769px) {
+  .menu_list > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+  .img_service {
+    margin: auto 40px;
+    padding: 10px;
+  }
+  .img_service > img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
+  .box,
+  .text_box,
+  .main_text,
+  .mains_text {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+  .form_control {
+    width: 200px;
   }
 }
