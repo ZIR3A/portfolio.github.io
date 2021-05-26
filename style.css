@@ -190,22 +190,40 @@ body {
   color: red;
 }
 .form_control {
-  position: relative;
+  /* position: relative;
   height: 40px;
   border-radius: 10px;
   border: none;
   font-size: 20px;
+  width: 80%; */
   width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  color: #fff;
+}
+#message {
+  resize: none;
 }
 
 #btn_contact {
-  background-color: #574b90;
-  margin-top: 20px;
-  height: 50px;
-  width: 80px;
+  background-color: #3f1b81;
+  margin-top: 25px;
+  height: 40px;
+  width: 80%;
   border-radius: 10px;
-  border: 1px solid black;
+  border: none;
+  box-shadow: 2px 2px 2px 1px black;
   cursor: pointer;
+  font-weight: 200;
+  color: #fff;
+}
+#btn_contact:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: none;
+  font-weight: 100;
 }
 .footer {
   height: 80px;
