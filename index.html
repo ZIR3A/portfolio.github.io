@@ -127,7 +127,7 @@
     </section>
     <section class="contact" id="contact">
       <h1 class="text_about">Contact me</h1>
-       <form class="form" method="post" action="mailhandler.php">
+      <form class="form" action="">
         <div class="form_main">
           <div class="fields">
             <label class="form_text">Name </label>
@@ -168,6 +168,7 @@
           name="submit"
           value="Send Message"
           id="btn_contact"
+          onclick=" return validateForm()"
         />
       </form>
     </section>
