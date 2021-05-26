@@ -127,14 +127,14 @@
     </section>
     <section class="contact" id="contact">
       <h1 class="text_about">Contact me</h1>
-      <form name="myForm" class="form" method="post" action="">
+       <form class="form" method="post" action="mailhandler.php">
         <div class="form_main">
           <div class="fields">
             <label class="form_text">Name </label>
             <input
               type="text"
               class="form_control"
-              name="fname"
+              name="name"
               placeholder="Name"
             />
             <span id="error-name"></span>
@@ -144,9 +144,8 @@
             <input
               type="email"
               class="form_control"
-              name="femail"
-              placeholder="Name"
-              id="email"
+              name="email"
+              placeholder="Email"
             />
             <span id="error-email"></span>
           </div>
@@ -154,7 +153,7 @@
             <label class="form_text">Message </label>
             <textarea
               id="message"
-              name="fmessage"
+              name="message"
               class="form_control"
               placeholder="Message Here...."
             ></textarea>
@@ -165,7 +164,6 @@
           Send Message
         </button> -->
         <input
-               onclick=" return validateForm()"
           type="submit"
           name="submit"
           value="Send Message"
